@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SearchFragment"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:background="#fff">
+        <EditText
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="105dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/ic_header_search"
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:maxLines="1"
+            android:background="@drawable/search"
+            android:hint=" 搜索课程、机构、分类"
+            android:textFontWeight="600"
+            android:textColorHint="@color/normal_grey"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:maxLength="16"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+    <com.xuexiang.xui.widget.tabbar.VerticalTabLayout
+        android:id="@+id/vertical"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        app:vtl_tab_margin="10dp"
+        app:vtl_indicator_color="#fff"
+        app:vtl_indicator_gravity="fill"
+        android:visibility="visible"
+        android:background="#f4f4f4"
+        app:vtl_tab_height="50dp"
+        app:vtl_tab_mode="scrollable"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="700dp"
+                        android:background="#fff"/>
+
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

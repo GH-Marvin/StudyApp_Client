@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="1dp"
+    android:background="#fff"
+    android:padding="15dp">
+        <ImageView
+            android:id="@+id/checked_iv"
+            android:padding="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/quest_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="单选"
+                    android:layout_gravity="center"
+                    android:textFontWeight="600"
+                    android:textColor="@color/normal_blue"
+                    android:background="@drawable/single"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1、关于社会调查，下列哪种表述不正确？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textFontWeight="600"/>
+</LinearLayout>

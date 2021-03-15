@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/item_menu"
+            android:icon="@drawable/ic_weibo"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/item_answer"
+            android:icon="@drawable/ic_qq"
+            android:title="@string/nav_answer" />
+
+        <item
+            android:id="@+id/item_mine"
+            android:icon="@drawable/ic_wechat"
+            android:title="@string/nav_mine" />
+    </menu>
